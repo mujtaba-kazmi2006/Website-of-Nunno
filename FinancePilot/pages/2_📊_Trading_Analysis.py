@@ -12,37 +12,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# Custom CSS for dark theme consistency
-st.markdown("""
-<style>
-    .stApp {
-        background: linear-gradient(180deg, #0e1117 0%, #1a1d24 100%);
-    }
-    
-    [data-testid="metric-container"] {
-        background-color: rgba(30, 35, 41, 0.8);
-        border: 1px solid rgba(0, 212, 170, 0.2);
-        padding: 1rem;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    
-    .stButton > button {
-        background: linear-gradient(45deg, #00d4aa, #0088cc);
-        color: white;
-        border: none;
-        border-radius: 8px;
-        font-weight: 600;
-        transition: all 0.3s ease;
-    }
-    
-    .stButton > button:hover {
-        background: linear-gradient(45deg, #00b894, #0074cc);
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0, 212, 170, 0.3);
-    }
-</style>
-""", unsafe_allow_html=True)
+
 
 # Check if profile is set up
 if not st.session_state.get("profile_setup", False):
@@ -423,10 +393,10 @@ if st.session_state.get("run_analysis", False):
                             row=4, col=1
                         )
                         
-                        # Update layout for dark theme
+                        # Update layout for light theme
                         fig.update_layout(
                             title=f"{symbol.upper()} Technical Analysis",
-                            template="plotly_dark",
+                            template="plotly_white",
                             height=800,
                             showlegend=True,
                             legend=dict(

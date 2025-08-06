@@ -3,10 +3,10 @@
 Nunno AI is a comprehensive finance assistant application built with Streamlit that provides personal financial education, trading analysis, and market insights. The application features a modern dark-themed multi-page interface designed to help beginners learn investing and trading through AI-powered conversations, advanced technical analysis with interactive charts, tokenomics evaluation, and real-time market news. Built by Mujtaba Kazmi, the system positions itself as "Numinous Nexus AI" - a central hub of financial knowledge that makes complex financial concepts accessible to newcomers.
 
 ## Recent Updates (August 2025)
-- ✅ **Professional Dark Mode**: Implemented cohesive dark theme across entire application with teal accents (#00d4aa)
+- ✅ **Light Mode**: Switched back to clean light theme for better accessibility
 - ✅ **Interactive Charts**: Added comprehensive 4-panel technical analysis charts (Price/EMAs, RSI, MACD, Volume)
 - ✅ **API Fallback System**: Implemented CoinGecko fallback when Binance API is geo-restricted
-- ✅ **Enhanced UI/UX**: Gradient buttons, hover effects, and professional trading terminal aesthetic
+- ✅ **Streamlit Cloud Ready**: Prepared for deployment with requirements.txt and configuration
 
 # User Preferences
 
